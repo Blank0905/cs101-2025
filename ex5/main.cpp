@@ -19,9 +19,7 @@ class Car {
     int get_m_MaxSeating() {
         return m_MaxSeating;
     }
-    string get_DriveMode(){
-        return m_DriveMode;
-    }
+
 };
 
 class BMW_Car : public Car {
