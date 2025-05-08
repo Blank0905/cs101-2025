@@ -19,7 +19,9 @@ class Car {
     int get_m_MaxSeating() {
         return m_MaxSeating;
     }
-
+    string get_DriveMode() {
+        return m_DriveMode;
+    }
 };
 
 class BMW_Car : public Car {
@@ -29,9 +31,6 @@ class BMW_Car : public Car {
         m_DriveMode = "Rear-wheel";
     }
     
-    string get_DriveMode() {
-        return m_DriveMode;
-    }
 };
 
 class AUDI_Car : public Car {
@@ -39,9 +38,6 @@ class AUDI_Car : public Car {
     AUDI_Car(string y, int z, int s) : Car("Audi", y, z, s) {
         cout << "counstructing AUDI_Car\n" ;
         m_DriveMode = "Front-wheel";
-    }
-    string get_DriveMode () {
-        return m_DriveMode;
     }
 };
 
@@ -51,9 +47,7 @@ class BENZ_Car : public Car {
         cout << "counstructing BENZ_Car\n";
         m_DriveMode = "Front-wheel";
     }
-    string get_DriveMode() {
-        return m_DriveMode;
-    }
+
 };
 
 int main()
